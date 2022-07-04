@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1280px;
+    color: #fff;
+    background: #17181c;
+    font-family: sans-serif;
+    margin: auto;
+}
+
+header {
+    height: 10vh;
+    padding: 20px 30px;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+footer {
+    height: 10vh;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+}
+
+.gh-user {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.gh-user:hover {
+    color: #30c5ff;
+}
+
+.footer-year,
+.gh-user {
+    font-size: 1.5em;
+}
+
+.gh-logo {
+    width: 135px;
+    height: 50px;
+    background-image: url(https://rs.school/images/rs_school_js.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: invert(93%) sepia(93%) saturate(29%) hue-rotate(69deg) brightness(108%) contrast(106%);
+    transition: 0.3s;
+}
+
+  .gh-logo:hover {
+    filter: invert(59%) sepia(92%) saturate(1288%) hue-rotate(169deg) brightness(103%) contrast(104%);
+}
+
+@media (max-width: 1279px) {
+    body {
+        width: 100%;
+    }
+}
+
+@media (max-width: 785px) {
+    header {
+        height: 7vh;
+        padding: 10px 30px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    main {
+        display: block;
+    }
+
+    footer {
+        height: 7vh;
+    }
+
+    .footer-year,
+    .gh-user {
+        font-size: 1em;
+    }
+
+    .gh-logo {
+        width: 81px;
+        height: 30px;
+    }
+}
